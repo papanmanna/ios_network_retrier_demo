@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="KAP-lm-nSI">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Light.ttf">
+            <string>Roboto-Light</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--LoginVC-->
+        <scene sceneID="QYp-jK-K4c">
+            <objects>
+                <viewController storyboardIdentifier="LoginVC" id="KAP-lm-nSI" customClass="LoginVC" customModule="SmartBins" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="z2Q-xi-faN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="CRM id (username)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WuD-Jm-s3i">
+                                <rect key="frame" x="16" y="344" width="382" height="34"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" textContentType="name"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DUY-hM-FY3">
+                                <rect key="frame" x="16" y="388" width="382" height="34"/>
+                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnW-Q4-8le">
+                                <rect key="frame" x="16" y="454" width="382" height="31"/>
+                                <color key="backgroundColor" red="0.86666666670000003" green="0.0" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                <state key="normal" title="LOGIN">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickOnLogin:" destination="KAP-lm-nSI" eventType="touchUpInside" id="3Fc-Mh-JJf"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gdc-Pv-ZyC" userLabel="TopView">
+                                <rect key="frame" x="0.0" y="44" width="414" height="300"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_login" translatesAutoresizingMaskIntoConstraints="NO" id="ajT-kS-Lib">
+                                        <rect key="frame" x="20" y="122.5" width="374" height="55"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ajT-kS-Lib" secondAttribute="trailing" constant="20" symbolic="YES" id="38C-Jk-1Da"/>
+                                    <constraint firstAttribute="height" constant="300" id="NC9-6d-aOt"/>
+                                    <constraint firstItem="ajT-kS-Lib" firstAttribute="centerY" secondItem="gdc-Pv-ZyC" secondAttribute="centerY" id="eoo-gs-TyR"/>
+                                    <constraint firstItem="ajT-kS-Lib" firstAttribute="leading" secondItem="gdc-Pv-ZyC" secondAttribute="leading" constant="20" symbolic="YES" id="tP0-N6-DGC"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="WuD-Jm-s3i" firstAttribute="leading" secondItem="l16-bk-rWP" secondAttribute="leading" constant="16" id="7fJ-Jm-YKn"/>
+                            <constraint firstItem="l16-bk-rWP" firstAttribute="trailing" secondItem="WuD-Jm-s3i" secondAttribute="trailing" constant="16" id="AqA-cI-ySO"/>
+                            <constraint firstItem="DUY-hM-FY3" firstAttribute="leading" secondItem="l16-bk-rWP" secondAttribute="leading" constant="16" id="Bx6-5D-hRB"/>
+                            <constraint firstItem="gnW-Q4-8le" firstAttribute="top" secondItem="DUY-hM-FY3" secondAttribute="bottom" constant="32" id="E4F-Cp-0Pw"/>
+                            <constraint firstItem="DUY-hM-FY3" firstAttribute="top" secondItem="WuD-Jm-s3i" secondAttribute="bottom" constant="10" id="HOx-cg-O2N"/>
+                            <constraint firstItem="gdc-Pv-ZyC" firstAttribute="top" secondItem="l16-bk-rWP" secondAttribute="top" id="JSF-Ve-p1a"/>
+                            <constraint firstItem="l16-bk-rWP" firstAttribute="trailing" secondItem="gdc-Pv-ZyC" secondAttribute="trailing" id="L30-iz-qF4"/>
+                            <constraint firstItem="WuD-Jm-s3i" firstAttribute="top" secondItem="gdc-Pv-ZyC" secondAttribute="bottom" id="edW-u5-lBX"/>
+                            <constraint firstItem="l16-bk-rWP" firstAttribute="trailing" secondItem="gnW-Q4-8le" secondAttribute="trailing" constant="16" id="ohh-bg-sur"/>
+                            <constraint firstItem="gdc-Pv-ZyC" firstAttribute="leading" secondItem="l16-bk-rWP" secondAttribute="leading" id="rIv-c6-DMO"/>
+                            <constraint firstItem="gnW-Q4-8le" firstAttribute="leading" secondItem="l16-bk-rWP" secondAttribute="leading" constant="16" id="waj-sc-lQL"/>
+                            <constraint firstItem="l16-bk-rWP" firstAttribute="trailing" secondItem="DUY-hM-FY3" secondAttribute="trailing" constant="16" id="xrt-HG-M5e"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="l16-bk-rWP"/>
+                    </view>
+                    <connections>
+                        <outlet property="logInButton" destination="gnW-Q4-8le" id="MQE-m9-cs7"/>
+                        <outlet property="passwordText" destination="DUY-hM-FY3" id="94Z-uH-cbp"/>
+                        <outlet property="userNameText" destination="WuD-Jm-s3i" id="Zxx-F4-1W0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Obq-oD-EU7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="198.55072463768118" y="133.92857142857142"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_login" width="170" height="55"/>
+    </resources>
+</document>

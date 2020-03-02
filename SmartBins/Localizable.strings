@@ -1,0 +1,35 @@
+/* 
+  Localizable.strings
+  SmartBins
+
+  Created by GeoTech Infoservices Private Limited on 20/01/20.
+  Copyright © 2020 Geotech Infoservices Private Limited. All rights reserved.
+*/
+
+"devices" = "Devices";
+"change_password" = "Change password";
+"error_invalid_password" = "Password must contain atleast 1 capital letter, 1 special character, 1 digit and length should be minimum 8 characters long";
+"error_invalid_username_length" = "Enter crm-id";
+"error_invalid_password_length" = "Enter minimum 8 characters long password";
+
+"error_invalid_new_password_length" = "Enter your new password minimum 8 characters long";
+"error_invalid_re_password_length" = "Enter confirm password";
+"error_password_mismatch" = "Password doesn't match";
+
+"error_invalid_old_password" = "Your old password must contain atleast 1 capital letter, 1 special character, 1 digit and length should be minimum 8 characters long";
+"error_invalid_new_password" = "Your new password must contain atleast 1 capital letter, 1 special character, 1 digit and length should be minimum 8 characters long";
+
+"error_invalid_password_length_login" = "Please enter password";
+"retry" = "Retry";
+"dismiss" = "Dismiss";
+"error" = "Error";
+"success" = "Success";
+"no" = "NO";
+"devices_registered" = " DEVICES ARE REGISTERED";
+"device_registered" = " DEVICE REGISTERED";
+
+"full" = "Full";
+"empty" = "Empty";
+
+"cm" = "cm";
+

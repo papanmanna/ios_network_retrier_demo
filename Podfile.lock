@@ -1,0 +1,24 @@
+PODS:
+  - GoogleMaps (3.7.0):
+    - GoogleMaps/Maps (= 3.7.0)
+  - GoogleMaps/Base (3.7.0)
+  - GoogleMaps/Maps (3.7.0):
+    - GoogleMaps/Base
+  - XLPagerTabStrip (9.0.0)
+
+DEPENDENCIES:
+  - GoogleMaps
+  - XLPagerTabStrip
+
+SPEC REPOS:
+  trunk:
+    - GoogleMaps
+    - XLPagerTabStrip
+
+SPEC CHECKSUMS:
+  GoogleMaps: 55da829c68aa931f3ae982b9e341cc2f3d89c587
+  XLPagerTabStrip: 61c57fd61f611ee5f01ff1495ad6fbee8bf496c5
+
+PODFILE CHECKSUM: 13cb9c8c00fa7dd87e31c8603947ee60829cfae4
+
+COCOAPODS: 1.8.4
